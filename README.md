@@ -5,4 +5,4 @@ or enemies, and various obstacles along the way; players experience adventures i
 who can offer help, and enjoy the thrill of surprises, overcoming challenges, and helping others, making it a family-friendly adventure designed
 for all ages who love exploration, problem-solving, and the atmosphere of the great outdoors.
 
-<img width="824" height="464" alt="Image" src="https://github.com/user-attachments/assets/8036315c-6246-4970-9901-a4c4529b9e2a" />
+<img width="824" height="564" alt="Image" src="https://github.com/user-attachments/assets/8036315c-6246-4970-9901-a4c4529b9e2a" />
