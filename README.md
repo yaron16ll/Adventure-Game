@@ -9,6 +9,9 @@ for all ages who love exploration, problem-solving, and the atmosphere of the gr
 
 
 ## Demo Videos
-[Watch Part 1](https://github.com/yaron16ll/Adventure-Game/releases/download/v1.0/Part1.mp4)  
-[Watch Part 2](https://github.com/yaron16ll/Adventure-Game/releases/download/v1.0/Part2.mp4)  
-[Watch Part 3](https://github.com/yaron16ll/Adventure-Game/releases/download/v1.0/Part3.mp4)  
+Part 1
+[Watch the video](https://github.com/yaron16ll/Adventure-Game/releases/download/v1.0/Part1.mp4)  
+Part 2
+[Watch the video](https://github.com/yaron16ll/Adventure-Game/releases/download/v1.0/Part2.mp4)  
+Part 3
+[Watch the video](https://github.com/yaron16ll/Adventure-Game/releases/download/v1.0/Part3.mp4)  
