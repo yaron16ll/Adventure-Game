@@ -6,3 +6,9 @@ who can offer help, and enjoy the thrill of surprises, overcoming challenges, an
 for all ages who love exploration, problem-solving, and the atmosphere of the great outdoors.
 
 <img width="824" height="564" alt="Image" src="https://github.com/user-attachments/assets/8036315c-6246-4970-9901-a4c4529b9e2a" />
+
+
+## Demo Videos
+[Watch Part 1](https://github.com/yaron16ll/Adventure-Game/releases/download/v1.0/Part1.mp4)  
+[Watch Part 2](https://github.com/yaron16ll/Adventure-Game/releases/download/v1.0/Part2.mp4)  
+[Watch Part 3](https://github.com/yaron16ll/Adventure-Game/releases/download/v1.0/Part3.mp4)  
