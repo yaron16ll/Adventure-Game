@@ -70,7 +70,6 @@ public class HunterBehaviour : MonoBehaviour
             playerBehaviour.enabled = false;
         missionBox2.SetActive(false);
         ConversationManager.Instance.StartConversation(convo);
-        // אחרי השיחה הראשונה: בדיקה אם כל 80 התוקנו
         
     }
 
