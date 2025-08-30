@@ -4,3 +4,5 @@ a way back home to the city while facing unexpected events such as the breakdown
 or enemies, and various obstacles along the way; players experience adventures in nature with the freedom to choose their path, meet characters
 who can offer help, and enjoy the thrill of surprises, overcoming challenges, and helping others, making it a family-friendly adventure designed
 for all ages who love exploration, problem-solving, and the atmosphere of the great outdoors.
+
+<img width="1024" height="1024" alt="Image" src="https://github.com/user-attachments/assets/3165b8e4-9b31-4f36-9b57-5fd8a4d64dab" />
