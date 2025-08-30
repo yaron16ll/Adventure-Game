@@ -1,0 +1,121 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+public class InventoryManagerRiver : MonoBehaviour
+{
+    public InventorySlotRiver[] inventorySlots;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    public bool HasAtLeastTwoOfEach(ItemType[] requiredTypes)
+    {
+        Dictionary<ItemType, int> itemCounts = new Dictionary<ItemType, int>();
+
+        foreach (ItemType type in requiredTypes)
+            itemCounts[type] = 0;
+
+        foreach (InventorySlotRiver slot in inventorySlots)
+        {
+            ItemType type = slot.GetItemType();
+            if (itemCounts.ContainsKey(type))
+            {
+                itemCounts[type] += slot.GetItemCount(); // פונקציה שתחזיר כמה פריטים יש בסלוט
+            }
+        }
+
+        foreach (ItemType type in requiredTypes)
+        {
+            if (itemCounts[type] < 2)
+                return false;
+        }
+
+        return true;
+    }
+
+    public bool RemoveItems(ItemType type, int amountToRemove)
+    {
+        foreach (InventorySlotRiver slot in inventorySlots)
+        {
+            if (slot.GetItemType() == type)
+            {
+                while (amountToRemove > 0 && slot.GetItemCount() > 0)
+                {
+                    slot.RemoveItem(type);
+                    amountToRemove--;
+                }
+
+                if (amountToRemove == 0)
+                    return true; // סיימנו להסיר
+            }
+        }
+        return false; // לא היה מספיק
+    }
+
+    // Select a slot while deselecting other slots
+    public void SelectSlot(InventorySlotRiver s)
+    {
+        int index;
+
+        for (index = 0; index < inventorySlots.Length; index++)
+        {
+            if (inventorySlots[index] == s)
+                inventorySlots[index].Select();
+            else inventorySlots[index].DeSelect();
+        }
+    }
+
+
+    public bool AddItem(Item item)
+    {
+        InventorySlotRiver tmpSlot = FindSlot(item);
+        if (tmpSlot != null)
+        {
+            return tmpSlot.AddItem(item);
+        }
+        return false;
+    }
+
+
+    public bool RemoveSelectedItem(Item item)
+    {
+        int index = GetSelectedSlot();
+        if (index != -1)
+        {
+            return inventorySlots[index].RemoveItem(item.type);
+
+        }
+        return false;
+    }
+ 
+    public int GetSelectedSlot()
+    {
+        int index;
+
+        for (index = 0; index < inventorySlots.Length; index++)
+            if (inventorySlots[index].getIsSelected())
+                return index;
+        return -1;
+    }
+
+
+    InventorySlotRiver FindSlot(Item item)
+    {
+        int i;
+        for (i = 0; i < inventorySlots.Length; i++)
+        {
+            if (inventorySlots[i].IsOfTheSameType(item.type) ||
+                inventorySlots[i].IsOfTheSameType(ItemType.Empty))
+                return inventorySlots[i];
+        }
+        return null;
+    }
+}
